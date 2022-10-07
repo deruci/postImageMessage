@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Main Page</title>
+  </head>
+
+  <body>
+    <main class="content">
+      <input
+        id="image-file-input"
+        type="file"
+        onchange="encodeImageFileAsURL(this)"
+      />
+      <br />
+      <button id="redirection-btn">Proceed for sending an image</button>
+      <h2>Delivery Status:</h2>
+      <span id="image-detail"> null </span>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
